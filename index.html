@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Simple Tailwind Starter</title>
+  </head>
+  <body class="bg-gray-700 md:flex justify-center items-center md:h-screen">
+    <div
+      class="max-w-3xl bg-white flex md:p-4 items-center rounded-lg md:flex-row flex-col-reverse page1 "
+    >
+      <div class="max-w-md md:p-8 flex flex-col gap-y-5 p-4">
+        <h1 class="md:text-5xl font-bold font-sans text-4xl">Stay updated!</h1>
+        <p class="text-gray-500">
+          join 60,000+ product managers recving monthly updates on
+        </p>
+        <div class="flex gap-3">
+          <img src="assets/images/icon-list.svg" alt="" />
+          <p>product discovery building what matters</p>
+        </div>
+        <div class="flex gap-3">
+          <img src="assets/images/icon-list.svg" alt="" />
+          <p>measuring to ensure updates are success</p>
+        </div>
+        <div class="flex gap-3">
+          <img src="assets/images/icon-list.svg" alt="" />
+          <p>And much more!</p>
+        </div>
+        <div class="flex justify-between">
+        <p class="font-bold">Email adderss</p>
+        <p class="text-red-700 font-bold hidden error">valid email required</p>
+      </div>
+      
+          <input
+            type="email"
+            name="email"
+            type="email"
+            placeholder="email@company.com"
+            class="p-2 border-2 w-full rounded-md -mt-3 input "
+          />
+     
+        <div
+          class="bg-slate-700 p-3 text-white font-bold justify-center flex rounded-md hover:bg-orange-600"
+        >
+          <button class="button">Subscribe to monthly newsletter</button>
+        </div>
+      </div>
+      <div>
+        <img
+          src="assets/images/illustration-sign-up-desktop.svg"
+          alt=""
+          class="md:block hidden"
+        />
+        <img
+          src="assets/images/illustration-sign-up-mobile.svg"
+          alt=""
+          class="md:hidden w-full"
+        />
+      </div>
+    </div>
+    <div class="max-w-md bg-white p-12 space-y-6 rounded-3xl hidden page2">
+     <img src="assets/images/icon-list.svg" alt="" class="w-16">
+     <h1 class="text-4xl font-bold w-52 text-gray-800">Thanks for subscribing!</h1>
+     <p>A comformation email has been sent to <h3 class="email text-gray-800 font-bold">ybygb8h9uhh</h3> plaese open it and click the button inside to confirm your Subscripition.</p>
+     <button class="bg-gray-800 p-5 justify-center text-white text-2xl font-bold w-80 hover:bg-orange-700 dissmiss">Dismiss message</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
